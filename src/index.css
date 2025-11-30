@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 220 15% 20%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --lost: 217 91% 60%;
+    --lost-light: 217 91% 95%;
+    --lost-foreground: 0 0% 100%;
+
+    --found: 142 76% 36%;
+    --found-light: 142 76% 95%;
+    --found-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    --hero-gradient: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(142, 76%, 36%));
+    --card-shadow: 0 4px 20px rgba(33, 150, 243, 0.1);
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --lost: 217 91% 60%;
+    --lost-light: 217 50% 20%;
+    --lost-foreground: 0 0% 100%;
+
+    --found: 142 76% 36%;
+    --found-light: 142 40% 20%;
+    --found-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 217 91% 60%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(217, 70%, 50%), hsl(142, 60%, 30%));
+    --card-shadow: 0 4px 20px rgba(33, 150, 243, 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
