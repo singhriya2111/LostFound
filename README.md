@@ -1,4 +1,3 @@
-```markdown
 # Lost and Found Portal
 
 A centralized web platform engineered to streamline the reporting, tracking, and recovery of misplaced property across institutions and communities.
@@ -54,6 +53,7 @@ LostFound/
 ├── vite.config.ts          # Vite build configuration
 └── package.json            # Project dependencies and script definitions
 
+
 ```
 
 ---
@@ -72,7 +72,7 @@ Ensure the following tools are available locally:
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/singhriya2111/LostFound.git](https://github.com/singhriya2111/LostFound.git)
+git clone https://github.com/singhriya2111/LostFound.git
 cd LostFound
 
 ```
@@ -105,8 +105,6 @@ npm run dev
 ---
 
 ## Database Schema
-
-Execute the following SQL commands within the Supabase SQL editor to initialize the required data structures and security policies:
 
 ```sql
 create table public.items (
